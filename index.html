@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compa 'tible" content="IE=edge">
+	<link rel="stylesheet" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+	<title>weather</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header"></header>
+		<main class="page">
+			<div class="page__main main-page">
+				<div class="main-page__container">
+					<div class="main-page__weather weather">
+						<form class="weather__form">
+							<input value="" type="text" placeholder="Aktobe" class="weather__input">
+							<button type="submit" class="weather__button">search</button>
+						</form>
+						<div class="weather__body">
+							<div class="left-content">
+								<div class="left-content__wrap">
+									<div id="1" class="left-content__top now-content">
+										<div class="now-content__top">0&deg</div>
+										<img class="now-content__img" src="./img/1.png" alt="Облачко">
+										<div class="now-content__bottom bottom-now-content">
+											<div data-city class="bottom-now-content__city "></div>
+											<button type="button" class="bottom-now-content__favorite">
+												<svg class="bottom-now-content__icon" width="24" height="25" viewBox="0 0 24 25"
+													fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path opacity="0.54" fill-rule="evenodd" clip-rule="evenodd"
+														d="M17.5 1C15.0556 1 12.8556 2.7875 12 5.125C11.1444 2.7875 8.94444 1 6.5 1C3.44444 1 1 3.6125 1 7.1875C1 12 5.27778 16.125 12 23C18.7222 16.125 23 12 23 7.1875C23 3.6125 20.5556 1 17.5 1Z"
+														stroke="black" stroke-width="2" />
+												</svg>
+											</button>
+										</div>
+									</div>
+									<div id="2" hidden class="left-content__top details">
+										<h3 data-city class="details__title"></h3>
+										<ul class="details__list">
+											<li id="1" class="details__item"></li>
+											<li id="2" class="details__item"></li>
+											<li id="3" class="details__item"></li>
+											<li id="4" class="details__item"></li>
+											<li id="5" class="details__item"></li>
+										</ul>
+									</div>
+									<div hidden id="3" class="left-content__top forecast">
+										<h3 data-city class="forecast__title"></h3>
+										<ul class="forecast__list">
+										</ul>
+									</div>
+								</div>
+								<div class="left-content__buttons buttons">
+									<button id="1" type="button" class="buttons__button _active-tab">Now</button>
+									<button id="2" type="button" class="buttons__button">Details</button>
+									<button id="3" type="button" class="buttons__button">Forecast</button>
+								</div>
+							</div>
+							<div class="right-content">
+								<h3 class="right-content__title">Added Locations:</h3>
+								<ul class="right-content__list list-right-content">
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer"></footer>
+	</div>
+	<script type="module" src="./main.js"></script>
+</body>
+
+
+</html>
+
+</html>
